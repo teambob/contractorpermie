@@ -176,23 +176,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					case 'annualex':
 						$('#annualinc').val($('#annualex').val() * 1.095);
 						$('#dailyinc').val($('#annualinc').val() / $('#daysworked').val());
-						_gaq.push(['_trackEvent', 'Forms', 'Contract or Permie', 'annualex']);
+						//_gaq.push(['_trackEvent', 'Forms', 'Contract or Permie', 'annualex']);
 						break;
 
 					case 'annualinc':
 						$('#annualex').val($('#annualinc').val() * (1/1.095));
 						$('#dailyinc').val($('#annualinc').val() / $('#daysworked').val());
-						_gaq.push(['_trackEvent', 'Forms', 'Contract or Permie', 'annualinc']);
+						//_gaq.push(['_trackEvent', 'Forms', 'Contract or Permie', 'annualinc']);
 						break;
 
 					case 'dailyinc':
 						$('#annualinc').val($('#dailyinc').val() * $('#daysworked').val());
 						$('#annualex').val($('#annualinc').val() * (1/1.095));
-						_gaq.push(['_trackEvent', 'Forms', 'Contract or Permie', 'daysworked']);
+						//_gaq.push(['_trackEvent', 'Forms', 'Contract or Permie', 'daysworked']);
 						break;
 
 					default:
-					_gaq.push(['_trackEvent', 'Forms', 'Contract or Permie', 'assumptions']);
+					//_gaq.push(['_trackEvent', 'Forms', 'Contract or Permie', 'assumptions']);
 					// One of the assumptions changed
 					$('#weekdays').val($('#daysperweek').val() * 52);
 
